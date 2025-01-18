@@ -1,17 +1,21 @@
 import { motion } from "framer-motion";
+import { Brain } from "lucide-react";
 
 export const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary to-secondary p-4 relative">
       <div className="absolute top-8 left-8">
-        <motion.h1 
+        <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-2xl font-bold text-white"
+          className="flex items-center gap-2"
         >
-          Studio 232
-        </motion.h1>
+          <Brain className="w-6 h-6 text-white" />
+          <h1 className="text-2xl font-bold text-white">
+            Studio 232
+          </h1>
+        </motion.div>
       </div>
       <div className="max-w-4xl mx-auto text-center">
         <motion.h1 
