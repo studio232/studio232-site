@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain } from "lucide-react";
+import { Atom } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -11,7 +11,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <Brain className="w-6 h-6 text-white" />
+          <Atom className="w-6 h-6 text-white" />
           <h1 className="text-2xl font-bold text-white">
             Studio 232
           </h1>
