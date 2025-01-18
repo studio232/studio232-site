@@ -19,7 +19,7 @@ const processSteps = [
   },
   {
     title: "Training & Onboarding",
-    description: "Provide comprehensive training to ensure your team can effectively utilize new AI tools.",
+    description: "If needed, provide comprehensive training to ensure your team can effectively utilize new AI tools.",
   },
   {
     title: "Ongoing Support & Optimization",
