@@ -21,16 +21,15 @@ export const CTA = () => {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      // Replace these with your EmailJS details
       const result = await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_4w3pi2n',
+        'template_ge1fs2n',
         {
           from_name: data.name,
           from_email: data.email,
           message: data.message,
         },
-        'YOUR_PUBLIC_KEY'
+        'tQTs4Dq1pjfhlAckd'
       );
 
       if (result.text === 'OK') {
