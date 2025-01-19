@@ -24,7 +24,7 @@ export const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold text-white mb-6"
         >
-          Transform Your Business with Custom AI Solutions
+          Grow Your Business with Custom AI Solutions
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

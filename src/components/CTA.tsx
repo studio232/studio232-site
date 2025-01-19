@@ -11,7 +11,7 @@ export const CTA = () => {
           transition={{ duration: 0.8 }}
           className="text-3xl md:text-4xl font-bold text-white mb-6"
         >
-          Ready to Transform Your Business with AI?
+          Ready to Grow Your Business with AI?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
