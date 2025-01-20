@@ -110,7 +110,7 @@ export const CTA = () => {
             
             <div>
               <Textarea
-                placeholder="Tell us about your business or challenges"
+                placeholder="Tell us about your business or challenges – a website link is appreciated too!"
                 {...register("message", { required: "Message is required" })}
                 className="bg-white/90 min-h-[120px]"
               />
