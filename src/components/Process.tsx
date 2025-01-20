@@ -48,14 +48,14 @@ export const Process = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="relative"
+              className="relative h-full"
             >
-              <div className="bg-secondary/10 p-8 rounded-xl">
+              <div className="bg-secondary/10 p-8 rounded-xl h-full flex flex-col">
                 <div className="flex items-start gap-4">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white font-bold shrink-0">
-                    {index + 1}
+                  <span className="text-secondary font-bold text-xl">
+                    {(index + 1).toString().padStart(2, '0')}
                   </span>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-4 text-secondary">{step.title}</h3>
                     <p className="text-gray-600">{step.description}</p>
                   </div>
