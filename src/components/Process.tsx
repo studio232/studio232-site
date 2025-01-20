@@ -52,9 +52,11 @@ export const Process = () => {
             >
               <div className="bg-secondary/10 p-8 rounded-xl h-full flex flex-col">
                 <div className="flex items-start gap-4">
-                  <span className="text-secondary font-bold text-xl">
-                    {(index + 1).toString().padStart(2, '0')}
-                  </span>
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-secondary shrink-0">
+                    <span className="text-secondary font-bold text-lg">
+                      {index + 1}
+                    </span>
+                  </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-4 text-secondary">{step.title}</h3>
                     <p className="text-gray-600">{step.description}</p>
