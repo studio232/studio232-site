@@ -14,7 +14,7 @@ const expertiseItems = [
   },
   {
     icon: Bot,
-    title: "Intelligent Communication Tools",
+    title: "Conversational AI",
     description: "Enhancing customer engagement through AI-powered voice agents and multichannel chatbots.",
   },
   {
