@@ -34,8 +34,8 @@ export const CTA = () => {
 
       if (result.text === 'OK') {
         toast({
-          title: "Success!",
-          description: "Your message has been sent successfully.",
+          title: "Thanks for your message!",
+          description: "You will hear from us very soon.",
         });
         reset();
       }
