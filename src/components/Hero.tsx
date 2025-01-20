@@ -2,6 +2,11 @@ import { motion } from "framer-motion";
 import { Atom } from "lucide-react";
 
 export const Hero = () => {
+  const scrollToContact = () => {
+    const contactSection = document.querySelector('#contact-form');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary to-secondary p-4 relative">
       <div className="absolute top-8 left-8">
@@ -38,6 +43,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          onClick={scrollToContact}
           className="bg-accent hover:bg-accent/90 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors"
         >
           Get Started

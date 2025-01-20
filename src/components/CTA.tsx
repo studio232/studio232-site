@@ -51,7 +51,7 @@ export const CTA = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-secondary to-accent">
+    <section id="contact-form" className="py-20 px-4 bg-gradient-to-br from-secondary to-accent">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
