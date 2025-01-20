@@ -40,6 +40,15 @@ export const Process = () => {
         >
           Our Process
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-16"
+        >
+          We believe that one size doesn't fit all. That's why we build AI solutions customized to your business, ensuring maximum impact and ROI.
+        </motion.p>
         <div className="grid md:grid-cols-2 gap-8">
           {processSteps.map((step, index) => (
             <motion.div
