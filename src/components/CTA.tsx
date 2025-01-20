@@ -25,8 +25,8 @@ export const CTA = () => {
         'service_4w3pi2n',
         'template_ge1fs2n',
         {
-          from_name: data.name,
-          from_email: data.email,
+          name: data.name,
+          email: data.email,
           message: data.message,
         },
         'tQTs4Dq1pjfhlAckd'
