@@ -40,26 +40,26 @@ export const Process = () => {
         >
           Our Process
         </motion.h2>
-        <div className="space-y-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {processSteps.map((step, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className={`flex flex-col md:flex-row items-center gap-6 ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
+              className="relative"
             >
-              <div className="w-full md:w-1/2">
-                <div className="bg-secondary/10 p-8 rounded-xl">
-                  <h3 className="text-xl font-semibold mb-4 text-secondary">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
+              <div className="bg-secondary/10 p-8 rounded-xl">
+                <div className="flex items-start gap-4">
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-white font-bold shrink-0">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-secondary">{step.title}</h3>
+                    <p className="text-gray-600">{step.description}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full md:w-1/2 flex justify-center">
-                <div className="w-2 h-16 md:w-16 md:h-2 bg-secondary/20 rounded-full" />
               </div>
             </motion.div>
           ))}
