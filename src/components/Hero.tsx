@@ -9,7 +9,7 @@ export const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary to-secondary p-4 relative">
-      <div className="absolute top-8 left-8">
+      <div className="absolute top-4 left-4">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -19,7 +19,7 @@ export const Hero = () => {
           <img 
             src="/lovable-uploads/c3ebb6ae-d447-44c2-9927-9b4da3514c8c.png" 
             alt="Studio 232 Logo" 
-            className="w-32 h-32 object-contain"
+            className="w-48 h-48 object-contain"
           />
         </motion.div>
       </div>
