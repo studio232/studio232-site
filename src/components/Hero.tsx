@@ -13,20 +13,6 @@ export const Hero = () => {
       {/* Particle Background */}
       <ParticleBackground />
       
-      {/* Glassmorphism floating card */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute top-0 right-[10%] w-32 h-32 bg-white/10 backdrop-blur-lg rounded-2xl hidden lg:flex items-center justify-center"
-        style={{
-          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.1)",
-          transform: "rotate(15deg) translateY(100px)"
-        }}
-      >
-        <div className="w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-full" />
-      </motion.div>
-      
       <div className="absolute top-0 left-4">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
