@@ -9,7 +9,7 @@ export const Footer = () => {
       transition={{ delay: 0.5, duration: 0.5 }}
       className="py-4 px-4 bg-accent/10 text-primary text-sm border-t border-accent/20"
     >
-      <div className="container mx-auto flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2">
+      <div className="container mx-auto flex flex-col md:flex-row justify-start items-center md:items-start space-y-2 md:space-y-0 md:space-x-2">
         <span>© 2025 Studio 232</span>
         <span className="hidden md:inline">·</span>
         <a href="mailto:abhi@studio232.co" className="hover:text-accent transition-colors">
