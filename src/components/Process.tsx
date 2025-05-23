@@ -4,28 +4,20 @@ import { useRef } from "react";
 
 const processSteps = [
   {
-    title: "Consultation",
-    description: "We begin by understanding your business goals, challenges, and opportunities for AI integration.",
+    title: "Understand Your Needs",
+    description: "We start by learning about your goals, challenges, and where AI can deliver real impact.",
   },
   {
-    title: "Needs Assessment & ROI Analysis",
-    description: "Identify and prioritize challenges based on potential impact and return on investment.",
+    title: "Build the Right Solution",
+    description: "We design and develop a tailored AI setup—voice agents, chatbots, or workflows—that fits your business.",
   },
   {
-    title: "Solution Development",
-    description: "Design and develop custom AI solutions tailored to your unique requirements.",
+    title: "Seamless Integration",
+    description: "Your AI tools are implemented into your systems and processes with minimal disruption.",
   },
   {
-    title: "Implementation",
-    description: "Seamlessly integrate AI technologies into your existing systems and workflows.",
-  },
-  {
-    title: "Training & Onboarding",
-    description: "If needed, provide comprehensive training to ensure your team can effectively utilize new AI tools.",
-  },
-  {
-    title: "Ongoing Support & Optimization",
-    description: "Offer continuous support and refine solutions to adapt to your evolving business needs.",
+    title: "Train, Launch, Improve",
+    description: "We train your team if needed, then go live—refining as we go to keep pace with your evolving needs.",
   },
 ];
 
