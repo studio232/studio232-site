@@ -9,7 +9,7 @@ export const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary to-secondary p-4 relative">
-      <div className="absolute top-4 left-4">
+      <div className="absolute top-0 left-4">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
