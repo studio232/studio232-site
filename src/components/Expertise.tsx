@@ -72,10 +72,10 @@ const itemVariants = {
 
 export const Expertise = () => {
   return (
-    <section className="py-20 px-4 bg-gray-50 relative overflow-hidden">
+    <section className="py-20 px-4 bg-white/90 relative overflow-hidden">
       {/* Background gradient blobs */}
-      <div className="absolute top-40 left-10 w-64 h-64 rounded-full bg-secondary/10 filter blur-3xl" />
-      <div className="absolute bottom-40 right-10 w-80 h-80 rounded-full bg-accent/10 filter blur-3xl" />
+      <div className="absolute top-40 left-10 w-64 h-64 rounded-full bg-secondary/5 filter blur-3xl" />
+      <div className="absolute bottom-40 right-10 w-80 h-80 rounded-full bg-accent/5 filter blur-3xl" />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
