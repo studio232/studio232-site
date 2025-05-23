@@ -1,10 +1,10 @@
 
 import { motion } from "framer-motion";
 import { Phone, MessageSquare, Users } from "lucide-react";
-import Image from "../components/ui/image";
 
 const expertiseItems = [
   {
+    icon: Phone,
     title: "AI Voice Assistants",
     description: "Let our AI voice assistants answer every call—any time, in any language.",
     features: [
@@ -15,10 +15,10 @@ const expertiseItems = [
       "Multilingual support",
       "Integrates with CRMs, calendars & more",
       "Frees up your team for higher-priority work"
-    ],
-    imageSrc: "/lovable-uploads/829bdf96-7b9c-4a7d-b315-a6a5558d6f31.png"
+    ]
   },
   {
+    icon: MessageSquare,
     title: "Conversational Chatbots",
     description: "Turn your website, WhatsApp, or social pages into 24/7 sales and support machines.",
     features: [
@@ -29,10 +29,10 @@ const expertiseItems = [
       "Works across all your channels",
       "Multilingual support",
       "Reduces time spent on repetitive support"
-    ],
-    imageSrc: "/lovable-uploads/829bdf96-7b9c-4a7d-b315-a6a5558d6f31.png"
+    ]
   },
   {
+    icon: Users,
     title: "Digital Team Members",
     description: "AI-powered teammates that handle the busywork, follow instructions, and never call in sick.",
     features: [
@@ -43,8 +43,7 @@ const expertiseItems = [
       "Scalable without increasing headcount",
       "Reduce manual errors and speed up execution",
       "Free up your team for high-impact work"
-    ],
-    imageSrc: "/lovable-uploads/829bdf96-7b9c-4a7d-b315-a6a5558d6f31.png"
+    ]
   },
 ];
 
@@ -72,10 +71,10 @@ const itemVariants = {
 
 export const Expertise = () => {
   return (
-    <section className="py-20 px-4 bg-white/90 relative overflow-hidden">
+    <section className="py-20 px-4 bg-gray-50 relative overflow-hidden">
       {/* Background gradient blobs */}
-      <div className="absolute top-40 left-10 w-64 h-64 rounded-full bg-secondary/5 filter blur-3xl" />
-      <div className="absolute bottom-40 right-10 w-80 h-80 rounded-full bg-accent/5 filter blur-3xl" />
+      <div className="absolute top-40 left-10 w-64 h-64 rounded-full bg-secondary/10 filter blur-3xl" />
+      <div className="absolute bottom-40 right-10 w-80 h-80 rounded-full bg-accent/10 filter blur-3xl" />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
@@ -114,14 +113,8 @@ export const Expertise = () => {
               }}
               className="bg-white backdrop-blur-sm bg-white/80 p-8 rounded-xl shadow-lg transition-all duration-300 border border-gray-100"
             >
-              <div className="relative flex items-center justify-center w-24 h-24 mb-6 rounded-lg overflow-hidden">
-                <div className="absolute inset-0 bg-black/80 rounded-lg" />
-                <img 
-                  src={item.imageSrc} 
-                  alt={item.title}
-                  className="w-20 h-20 object-contain relative z-10"
-                />
-                <div className="absolute inset-0 bg-gradient-radial from-secondary/40 to-transparent blur-md"></div>
+              <div className="relative flex items-center justify-center w-16 h-16 mb-6 bg-secondary/10 rounded-lg">
+                <item.icon className="w-8 h-8 text-secondary" />
               </div>
               
               <h3 className="text-xl font-semibold mb-3 text-primary">{item.title}</h3>
