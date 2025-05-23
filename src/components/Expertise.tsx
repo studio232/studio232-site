@@ -142,7 +142,6 @@ export const Expertise = () => {
                     }}
                     className="flex items-start"
                   >
-                    <span className="text-secondary mr-2 flex-shrink-0 mt-0.5">•</span>
                     <span className="text-gray-700 text-sm">{feature}</span>
                   </motion.li>
                 ))}
