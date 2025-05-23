@@ -103,9 +103,12 @@ export const Process = () => {
               }}
               whileHover={{
                 y: -5,
-                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                transition: {
+                  duration: 0.3,
+                }
               }}
-              className="relative h-full"
+              className="relative h-full rounded-xl overflow-hidden"
             >
               <div className="bg-gradient-to-br from-white to-secondary/5 p-8 rounded-xl h-full flex flex-col border border-secondary/10">
                 <div className="flex items-start gap-4">
