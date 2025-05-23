@@ -17,7 +17,7 @@ export const Hero = () => {
           className="flex items-center gap-2"
         >
           <img 
-            src="/lovable-uploads/c3ebb6ae-d447-44c2-9927-9b4da3514c8c.png" 
+            src="/lovable-uploads/3aac652b-c46f-4d9c-a3a7-ac9bb60176d3.png" 
             alt="Studio 232 Logo" 
             className="w-48 h-48 object-contain"
           />
