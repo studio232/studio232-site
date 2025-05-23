@@ -113,8 +113,9 @@ export const Expertise = () => {
               }}
               className="bg-white backdrop-blur-sm bg-white/80 p-8 rounded-xl shadow-lg transition-all duration-300 border border-gray-100"
             >
-              <div className="relative flex items-center justify-center w-16 h-16 mb-6 bg-secondary/10 rounded-lg">
-                <item.icon className="w-8 h-8 text-secondary" />
+              <div className="relative flex items-center justify-center w-16 h-16 mb-6 bg-secondary/10 rounded-lg overflow-hidden before:absolute before:inset-0 before:bg-secondary/30 before:animate-pulse before:blur-xl">
+                <item.icon className="w-8 h-8 text-secondary relative z-10" />
+                <div className="absolute inset-0 bg-gradient-radial from-secondary/30 to-transparent blur-sm"></div>
               </div>
               
               <h3 className="text-xl font-semibold mb-3 text-primary">{item.title}</h3>
