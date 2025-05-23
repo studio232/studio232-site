@@ -19,11 +19,8 @@ export const Hero = () => {
           <img 
             src="/lovable-uploads/47cfb3ce-7813-443e-a580-9308f6c8f70c.png" 
             alt="Studio 232 Logo" 
-            className="w-10 h-10 object-contain"
+            className="w-16 h-16 object-contain"
           />
-          <h1 className="text-2xl font-bold text-white">
-            Studio 232
-          </h1>
         </motion.div>
       </div>
       <div className="max-w-4xl mx-auto text-center">
