@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Phone, Users } from "lucide-react";
 
@@ -107,7 +108,7 @@ export const Expertise = () => {
               <p className="text-gray-600 mb-6">{item.description}</p>
               
               <motion.ul 
-                className="space-y-2"
+                className="space-y-3"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -126,9 +127,10 @@ export const Expertise = () => {
                       hidden: { opacity: 0, x: -10 },
                       visible: { opacity: 1, x: 0, transition: { duration: 0.3 } }
                     }}
-                    className="flex items-start"
+                    className="flex items-start gap-3"
                   >
-                    <span className="text-gray-700 text-sm">{feature}</span>
+                    <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                    <span className="text-gray-700 text-sm leading-relaxed">{feature}</span>
                   </motion.li>
                 ))}
               </motion.ul>
