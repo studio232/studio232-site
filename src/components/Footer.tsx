@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 export const Footer = () => {
   return <motion.footer initial={{
@@ -16,6 +17,8 @@ export const Footer = () => {
         </a>
         <span className="inline">·</span>
         <span>New York</span>
+        <span className="inline">·</span>
+        <span>Toronto</span>
         <span className="inline">·</span>
         <span>Dubai</span>
       </div>
