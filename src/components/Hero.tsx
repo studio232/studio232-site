@@ -1,4 +1,5 @@
 
+
 import { motion } from "framer-motion";
 import { ParticleBackground } from "./ParticleBackground";
 
@@ -13,7 +14,7 @@ export const Hero = () => {
       {/* Particle Background */}
       <ParticleBackground />
       
-      <div className="absolute top-0 left-4">
+      <div className="fixed top-4 left-4 z-20">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -79,3 +80,4 @@ export const Hero = () => {
     </section>
   );
 };
+
