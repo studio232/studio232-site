@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { Phone, MessageSquare, Users } from "lucide-react";
+import { Phone, Users } from "lucide-react";
 
 const expertiseItems = [
   {
@@ -14,21 +13,8 @@ const expertiseItems = [
       "Detects intent and routes smartly",
       "Multilingual support",
       "Integrates with CRMs, calendars & more",
-      "Frees up your team for higher-priority work"
-    ]
-  },
-  {
-    icon: MessageSquare,
-    title: "Conversational Chatbots",
-    description: "Turn your website, WhatsApp, or social pages into 24/7 sales and support machines.",
-    features: [
-      "Instant replies to customer questions",
-      "Captures leads while you sleep",
-      "Handles FAQs, orders, and appointment booking",
-      "Seamlessly routes complex issues to your team",
-      "Works across all your channels",
-      "Multilingual support",
-      "Reduces time spent on repetitive support"
+      "Frees up your team for higher-priority work",
+      "Also works across WhatsApp, social media, and website messaging channels"
     ]
   },
   {
@@ -101,7 +87,7 @@ export const Expertise = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-10"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-10"
         >
           {expertiseItems.map((item, index) => (
             <motion.div
