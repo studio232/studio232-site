@@ -21,7 +21,7 @@ const expertiseItems = [
   {
     icon: Users,
     title: "Digital Team Members",
-    description: "AI-powered teammates that handle the busywork, follow instructions, and never call in sick.",
+    description: "AI-powered teammates that follow instructions, respond to feedback and never call in sick.",
     features: [
       "Automate tasks that typically require human judgment with smart, AI-driven workflows",
       "Manage customer intake, triage service requests, generate reports, or track project updates",
